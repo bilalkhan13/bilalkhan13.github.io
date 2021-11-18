@@ -1,0 +1,57 @@
+.departments-container {
+  background-color: $theme-colors;
+  
+  .departments {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    .dept-list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+        .dept-frame {
+				display: flex;
+				flex-direction: column;
+        border-radius: 15px;
+        margin: 15px 15px;
+        width: 310px;
+        min-height: 425px;
+        background-color: $theme-colors-font;				
+        .dept-img {
+          display: flex;
+          justify-content: center;
+          img {
+            width: 90%;
+            border-radius: 15px;
+            height: 202px;
+            padding: 15px 5px 5px;
+          }
+        }
+        .dept-detail {
+          display: flex;
+          justify-content: start;
+          flex-direction: column;
+          .dept-heading {
+            background-color: #db0238e7;
+            text-align: center;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: $theme-colors-font;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 10px 0 10px 0;
+            margin: 0;
+          }
+          .dept-desc {
+            font-size: 20px;
+            padding: 10px 15px 5px;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}

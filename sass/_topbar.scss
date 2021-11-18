@@ -1,0 +1,55 @@
+.top-bar {
+  background-color: $theme-colors;
+  color: $theme-colors-font;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  .top-row {
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0px;
+    i {
+      font-size: 24px;
+      padding: 0 2px 0px 12px;
+    }
+    strong {
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .address {
+      display: block;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 52%;
+      strong {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: underline;
+        i {
+          display: flex;
+          font-size: 14px;
+        }
+      }
+      a {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: first baseline;
+        text-align: center;
+      }
+      span {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+      }
+    } //address
+    .contact-info {
+      display: flex;
+      flex-direction: row;
+    } //Contact-info
+  } //top-row
+} //top-bar

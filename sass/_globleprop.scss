@@ -1,0 +1,26 @@
+/** Global Properties*/
+
+.container {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: $section-heading;
+  color: $theme-colors-font;
+  justify-content: center;
+}
