@@ -1,7 +1,7 @@
 /****************
  1024 Break Point
  ****************/
- @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .top-row {
     .address {
       max-width: 50%;
@@ -27,12 +27,47 @@
       }
     } //1024-contact-info
   } //1024-top--row
+
+  .executive-section {
+    .executive-team {
+      .executive-member {
+        .executive-frame {
+          .executive-photo {
+            min-height: auto;
+            img {
+              width: 200px;
+              height: 230px;
+            }
+          }
+          .executive-details {
+            .executive-data {
+              width: 85%;
+              .executive-name {
+                font-size: $font-lg-content;
+              }
+              .executive-seat {
+                font-size: $font-lg-content;
+              }
+            }
+          }
+          .executive-desc {
+            font-size: $font-md-content;
+            width: 95%;
+          }
+        }
+      }
+    }
+  } //executive-section
 } //media-1024
 
 /****************
  768 Break Point
  ****************/
 @media (max-width: 768px) {
+  .container {
+    width: 99%;
+  }
+
   .top-row {
     justify-content: space-around !important;
     .contact-info {
@@ -50,9 +85,9 @@
             font-size: 16px;
           }
         }
-      }//div
+      } //div
     } //768-Contact-info
-  }//768-top+row
+  } //768-top+row
 
   .nav-container {
     .nav-header {
@@ -64,5 +99,108 @@
         margin: auto;
       }
     }
-  }//nav-container 
+  } //nav-container
+
+  .executive-section {
+    .executive-team {
+      margin: 15px 0;
+      width: 100%;
+      .executive-member {
+        .executive-frame {
+          flex-direction: column;
+          .executive-photo {
+            align-items: center;
+            min-height: auto;
+            img {
+              width: 200px;
+              height: 230px;
+            }
+          }
+          .executive-details {
+            .executive-data {
+              width: 85%;
+              .executive-name {
+                font-size: $font-md-content;
+              }
+              .executive-seat {
+                font-size: $font-md-content;
+              }
+            }
+          }
+          .executive-desc {
+            font-size: $font-md-content;
+            width: 95%;
+          }
+        }
+      }
+      :last-child {
+        .executive-frame {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  } //executive-section
 } //media-768
+
+/****************
+ 425 Break Point
+ ****************/
+@media (max-width: 425px) {
+  .section-heading {
+    font-size: $section-lg-heading;
+  }
+
+  .executive-section {
+    .executive-team {
+      margin: 15px 0;
+      width: 100%;
+      .executive-member {
+        .executive-frame {
+          flex-direction: column;
+          .executive-photo {
+            align-items: center;
+            min-height: auto;
+            img {
+              width: 200px;
+              height: 230px;
+            }
+          }
+          .executive-details {
+            .executive-data {
+              width: 98%;
+              .executive-name {
+                font-size: $font-md-content;
+              }
+              .executive-seat {
+                font-size: $font-md-content;
+              }
+            }
+          }
+          .executive-desc {
+            font-size: $font-md-content;
+            width: 95%;
+          }
+        }
+      }
+      :last-child {
+        .executive-frame {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  } //executive-section
+
+  .nav-container {
+    .nav-header .navbar ul li a {
+      padding: 12px 5px;
+      font-size: 10px;
+    }
+  } //nav-container
+
+  .top-bar {
+    font-size: 10px;
+    .top-row strong {
+      font-size: 12px;
+    }
+  }
+} //media-425

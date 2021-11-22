@@ -36,17 +36,16 @@
           .dept-heading {
             background-color: #db0238e7;
             text-align: center;
-            font-size: 24px;
+            font-size: $font-sub-heading;
             font-family: Arial, Helvetica, sans-serif;
             color: $theme-colors-font;
             font-weight: 700;
-            letter-spacing: 2px;
             text-transform: uppercase;
             padding: 10px 0 10px 0;
             margin: 0;
           }
           .dept-desc {
-            font-size: 20px;
+            font-size: $font-lg-content;
             padding: 10px 15px 5px;
             text-align: justify;
           }
